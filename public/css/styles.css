@@ -1,0 +1,264 @@
+body{
+	padding: 0;
+	margin: 0;
+
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #ffffff;
+
+	background-image: url(../img/fon.jpg);
+	background-repeat: repeat;
+  background-size: cover;
+
+  box-sizing: border-box;
+}
+
+h1,
+p{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 2em;
+	line-height: 1.5;
+}
+
+p{
+	font-style: italic;
+}
+
+ @media (max-width: 560px) {
+h1{
+	font-size: 1em;
+	line-height: 0.8;
+}
+
+
+p{
+	font-size: 0.8em;
+	line-height: 0.7;
+}
+  }
+
+ .main_on_page{
+ 	width: 80%;
+	margin: auto auto;
+}
+
+.cross_info,
+.view_info{
+	display: inline-block;
+		
+	width: 100%;
+	margin: 0;
+
+	background-color: #c0c0c0;
+	opacity: 0,7;
+	font-size: 10pt;
+}
+
+.cross_info{
+	height: 400px;
+}
+
+.name-event{
+	background-color: #f2f3f4;
+	height: 20px;
+}
+		
+.info_text{
+	height: 135px;
+	overflow: scroll;
+	margin-bottom:15px; 
+	background-color: #f2f3f4;
+	resize: none;
+}
+
+.coords{
+	width: 100%;
+}
+
+#image-map-wrapper{
+	text-align: center;
+}
+
+#image-map-container{
+	display: inline-block;
+	border: 2px solid #ddd;
+	padding: 2px;
+	border-radius: 3px;
+	max-width: 100%;
+}
+
+.image-mapper{
+	position: relative;
+	user-select: none;
+}
+
+.image-mapper-img{	
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img{
+	vertical-align: middle;
+	border: 0;
+}
+
+.image-mapper-svg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+circle{
+	fill: rgb(255, 0, 0);
+	stroke: rgb(255, 0, 0);
+	stroke-width: 1;
+	cursor: pointer;
+}
+
+.image-mapper-point{
+	fill: rgb(0, 128, 0);
+	stroke: rgb(0, 128, 0);
+}
+/*for modal and after delete it*/
+.view_info img{
+	display: block;
+	margin: 0 auto;
+	width: 35%;
+}
+
+#swordTop {
+	position: fixed;
+  top: 10px;
+  right: 20px;
+	height: 75px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/*modal window styles*/
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  font-family: Helvetica, Arial, sans-serif;
+  color:#000000;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #000000;
+  word-break: break-all;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-body img {
+  width: 200px;
+  height: auto;
+}
+
+.modal-body p{
+  word-break: break-all;
+}
+
+.modal-default-button {
+  display: block;
+  margin-top: 1rem;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+
+/*
+*Admin panel styles
+*/
+
+table.points{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+	background-color: #fff;
+}
+table.points img{
+	width: 70px;
+	height: auto;
+}
+table.points,table.points td, table.points th {
+	border: 1px solid #595959;
+}
+table.points td,table.points th {
+	padding: 3px;
+}
+table.points th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+}
+
+div.pagination {
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+div.pagination > div{
+	position: absolute;
+    left: 50%;
+	padding-top: 10px;
+}
+
+div.pagination > div p {
+	color: red;
+	padding-top: 10px;
+}
+
+div.pagination > div svg {
+	width: 20px;
+	height: auto;
+}
